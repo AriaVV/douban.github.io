@@ -1,0 +1,13 @@
+.list_tit{display:block;padding:25rpx;text-align:center;font-size:30rpx;border-bottom: 1rpx solid #ccc;}
+.list_view{display:flex;flex:1;flex-direction: column;}
+.list_item{display: flex;padding: 20rpx;border-bottom: 1rpx solid #eee;}
+.list_item image {height: 200rpx;width: 140rpx;}
+.list_info {flex: 1;margin-left:50rpx;color: #777;font-size: 30rpx;}
+.list_info text{display:block;margin: 10rpx 0;}
+.score {display:inline-block;width: 60rpx;height: 40rpx;font-size: 30rpx;background-color: #c40;color: #fff;border-radius: 10rpx;text-align:center;line-height:40rpx ;}
+scroll-view {width: 100%;height: 1000 rpx;}
+.data_more,.data_load,.data_pull{display:block;width:100%;margin:40rpx 0;text-align:center;font-size:28rpx;color:#ccc;}
+.data_load view,.data_pull view{margin-top:20rpx;vertical-align:middle;display:inline-block;width:70rpx;height:70rpx;background:url(../../images/loading.gif)no-repeat top center;background-size:60%}
+.data_load text{background:url(../../images/loading.gif)no-repeat -216rpx -154rpx;}
+.data_none{display:none;}
+.data_block{display:block;}

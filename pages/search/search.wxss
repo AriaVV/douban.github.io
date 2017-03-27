@@ -1,0 +1,13 @@
+.search_inp{padding: 20rpx 40rpx;color: #999;font-size: 38rpx;text-align: center;border-bottom: 1px solid #cccccc;}
+.search_inp input{color:#666;font-size:30rpx;}
+.list_tit{display:block;padding:25rpx;text-align:center;font-size:25rpx;border-bottom: 1rpx solid #fff;color:#ccc;}
+.list_view{display:flex;flex:1;flex-direction: column;}
+.list_item{display: flex;padding: 20rpx;border-bottom: 1rpx solid #eee;}
+.list_item image {height: 200rpx;width: 140rpx;}
+.list_info {flex: 1;margin-left:50rpx;color: #777;font-size: 30rpx;}
+.list_info text{display:block;margin: 10rpx 0;}
+.score {display:inline-block;width: 60rpx;height: 40rpx;font-size: 30rpx;background-color: #c40;color: #fff; border-radius: 10rpx;text-align:center;line-height:40rpx ;}
+.data_more{display:block;width:100%;margin:40rpx 0;text-align:center;font-size:26rpx;color:#ccc;}
+.data_none{display:none;}
+.data_block{display:block;}
+

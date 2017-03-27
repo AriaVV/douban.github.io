@@ -1,0 +1,10 @@
+.classify{-webkit-box-sizing: border-box; box-sizing:border-box;}
+swiper{height: 300rpx;}
+swiper navigator{height:100%;}
+swiper-item .slide-image{width: 100%;height: 100%;}
+.intro{padding:40rpx;padding-top:80rpx;padding-bottom:0rpx;}
+.intro_tit{display: block;font-size: 50rpx;}
+.intro_des{display:block;margin-top:30rpx;font-size: 30rpx;color: #888;}
+.classify{width: 100%;flex-direction: column;padding:40rpx;}
+.cla_item{display: flex;justify-content:space-between;border: 1rpx solid #eee;margin-top: 20rpx;padding: 35rpx;}
+.cla_item image{width: 20px;height: 20px;}

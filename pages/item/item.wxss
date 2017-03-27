@@ -1,0 +1,11 @@
+.container,view{box-sizing: border-box;-webkit-box-sizing:border-box;}
+.container{display: flex;flex-direction: column;padding:60rpx 12%;
+    height: 2000 rpx;}
+image{width: 100%;height: 720rpx;margin-bottom:20rpx;}
+.title{height: 80 rpx;line-height: 80rpx;text-align:center;font-style: 42rpx;color: #444;}
+.info {display: block;font-size: 24rpx; color: #888;margin-top: 30rpx;}
+.staring{margin-bottom:30rpx }
+.label{display:block;}
+.content{color: #666;
+    font-size: 28rpx;
+    padding: 10rpx}

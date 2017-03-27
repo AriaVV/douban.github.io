@@ -1,0 +1,32 @@
+<view class="container">
+  <view class=" search_inp">
+    <input placeholder="请在此输入搜索内容" bindchange="search" bindblur="search" bindconfirm="search" bindconfirm="search_load" />
+  </view>
+  <loading hidden="{{ !loading }}">
+  </loading>
+  
+  <view class="list_tit">{{ title }} </view>
+ 
+    
+     <view class="list_view">
+      <block wx:for="{{ list }}">
+        <navigator url="../item/item?id={{  item.id  }}">
+          <view class="list_item">
+            <image src="{{item.images.small}}"></image>
+            <view class="list_info">
+              <text class="title">{{ item.title }}</text>
+              <text class="year">{{ item.original_title}} ({{ item.year }})</text>
+              <text class="director">导演：
+                <block wx:for="{{ item.directors }}"> {{ item.name }} </block>
+              </text>
+            </view>
+            <view class="rating">
+              <text class="score">{{ item.rating.average }}</text>
+            </view>
+          </view>
+        </navigator>
+      </block>
+  </view>
+  <view class="data_more {{ data_view }}">没有找到您要搜索的电影,请换其他关键字进行搜索</view>
+ 
+</view>

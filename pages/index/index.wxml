@@ -1,0 +1,45 @@
+<view class="container">
+  <view class="banner">
+  	<swiper indicator-dots="true"
+	  autoplay="true" interval="3000" duration="1000" circular="true">
+	  <block wx:for="{{imgUrls}}">
+	    <swiper-item>
+				<navigator url="../item/item?id={{  item.id  }}">
+	      	<image src="{{item.images.large}}" class="slide-image" mode="aspectFill"/>
+				</navigator>
+	    </swiper-item>
+	  </block>
+	</swiper>
+  </view>
+  <view class="intro">
+  	<text class="intro_tit">豆瓣电影榜单集合</text>
+  	<text class="intro_des">最新，最IN的影视信息收集~</text>
+  </view>
+  <view class="classify">
+  	<navigator url="../list/list?type=in_theaters&name=正在热映">
+	  	<view class="cla_item">
+	  		<text>正在热映</text>
+	  		<image src="../../images/arrowright.png" mode="aspectFill"/>
+	  	</view>
+	</navigator>
+	<navigator url="../list/list?type=coming_soon&name=即将上映">
+	  	<view class="cla_item">
+	  		<text>即将上映</text>
+					<image src="../../images/arrowright.png" mode="aspectFill" />
+				
+	  	</view>
+	</navigator>
+	<navigator url="../list/list?type=top250&name=TOP250">
+	  	<view class="cla_item">
+	  		<text>Top250</text>
+	  		<image src="../../images/arrowright.png" mode="aspectFill"/>
+	  	</view>
+	</navigator>
+	<navigator url="../list/list?type=us_box&name=北美票房榜">
+	  	<view class="cla_item">
+	  		<text>北美票房榜</text>
+	  		<image src="../../images/arrowright.png" mode="aspectFill"/>
+	  	</view>
+	</navigator>
+  </view>
+</view>

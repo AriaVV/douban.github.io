@@ -1,0 +1,28 @@
+<loading hidden="{{ !loading }}">
+        拼了命的加载中...
+</loading>
+
+<scroll-view style="height:{{ windowHeight }}px" scroll-y="true" upper-threshold="0px" lower-threshold="20px" bindscrolltoupper="upperEventHandle" bindscrolltolower="lowerEventHandle" bindscroll="scroll">
+<view class="data_pull {{ data_pull }}"><view></view>刷新</view>
+  <view class="list_view">
+    <block wx:for="{{ list }}" vx:key="index">
+      <navigator url="../item/item?type=in_theaters&name=正在热映&id={{  item.id  }}">
+        <view class="list_item">
+          <image src="{{item.images.small}}"></image>
+          <view class="list_info">
+            <text class="title">{{ item.title }}</text>
+            <text class="year">{{ item.original_title}} ({{ item.year }})</text>
+            <text class="director">导演：
+              <block wx:for="{{ item.directors }}" vx:key="index"> {{ item.name }}</block>
+            </text>
+          </view>
+          <view class="rating">
+            <text class="score">{{ item.rating.average }}</text>
+          </view>
+        </view>
+      </navigator>
+    </block>
+  </view>
+  <view class="data_more {{ data_view }}">没有更多数据了</view>
+   <view class="data_load {{ data_load }}"><view></view>正在加载更多数据</view>
+</scroll-view>

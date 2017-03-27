@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/pages/search/search.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/search/search.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/search/search.wxml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/search/search.wxss" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/splash/splash.json" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/user/user.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/pages/user/user.json" charset="UTF-8" />
+  </component>
+</project>
